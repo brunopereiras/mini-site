@@ -5,7 +5,20 @@ html
     link(rel='stylesheet', href='/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    
+    nav(class='navbar navbar-expand-lg navbar-dark bg-dark')
+      a(class='navbar-brand', href='/') Mini site &nbsp;
+        span(class='badge badge-secondary') beta
+      .navbar-nav.mr-auto
+        a(class='nav-link text-light', href='/project') Sobre
+      a(class='btn btn-outline-light mr-2', href='/user') User name
+      a(class='btn btn-outline-light mr-2', href='/user/signup') Cadastre-se
+      a(class='btn btn-outline-light', href='/user/login') Entrar
+
     block content
+
+    .container
+      hr(class='my-4')
+      p O Bug Tracker foi criado  por Bruno Duarte Pereira santos. Qualquer dúvida, problema, sugestão ou elogio pode me procurar no Skype pelo meu nome ou pelo meu email&nbsp;
+        a(href='mailto:bruno.a.pereira-santos@itau-unibanco.com.br') bruno.a.pereira-santos@itau-unibanco.com.br
 
     script(language='javascript', src='/js/bootstrap.min.js')
